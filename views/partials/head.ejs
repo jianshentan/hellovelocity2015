@@ -1,4 +1,45 @@
-<title>Hello Velocity</title>
 <link rel='stylesheet' href='/css/style.css' />
 <link rel='stylesheet' href='/fonts/font-awesome-4.3.0/css/font-awesome.min.css' />
+<link rel="canonical" href="http://www.hellovelocity.com/">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<meta property="keywords" content="Yinte Bitelabs McMass Genecoin Pinkhouse Beastmade Speculative Digital Creative Social Hello Velocity"> 
 
+<title>Hello Velocity</title>
+<meta name="description" content="Hello Velocity is a digital marketing and branding agency interested in how content spreads in the social age.">
+<meta property="og:description" content="Hello Velocity is a digital marketing and branding agency interested in how content spreads in the social age.">
+
+<% if( page_url == "/bitelabs" ) { %>
+  <meta property="og:title" content="Hello Velocity - Bitelabs">
+  <meta property="og:url" content="http://www.hellovelocity.com/bitelabs">
+  <meta property="og:image" content="/media/bitelabs/facebook_banner.jpg">
+<% } else if( page_url =="/yinte" ) { %>
+  <meta property="og:title" content="Hello Velocity - Yinte">
+  <meta property="og:url" content="http://www.hellovelocity.com/yinte">
+  <meta property="og:image" content="/media/yinte/facebook_banner.jpg">
+<% } else if( page_url =="/pinkhouse" ) { %>
+  <meta property="og:title" content="Hello Velocity - Pinkhouse">
+  <meta property="og:url" content="http://www.hellovelocity.com/pinkhouse">
+  <meta property="og:image" content="/media/pinkhouse/facebook_banner.jpg">
+<% } else if( page_url =="/mcmass" ) { %>
+  <meta property="og:title" content="Hello Velocity - The McMass Project">
+  <meta property="og:url" content="http://www.hellovelocity.com/mcmass">
+  <meta property="og:image" content="/media/mcmass/facebook_banner.jpg">
+<% } else if( page_url =="/genecoin" ) { %>
+  <meta property="og:title" content="Hello Velocity - Genecoin">
+  <meta property="og:url" content="http://www.hellovelocity.com/Genecoin">
+  <meta property="og:image" content="/media/genecoin/facebook_banner.jpg">
+<% } else if( page_url =="/beastmade" ) { %>
+  <meta property="og:title" content="Hello Velocity - Beastmade">
+  <meta property="og:url" content="http://www.hellovelocity.com/beastmade">
+  <meta property="og:image" content="/media/beastmade/facebook_banner.jpg">
+<% } %>
+
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-57531666-1', 'auto');
+ ga('send', 'pageview');
+</script>

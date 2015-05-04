@@ -309,6 +309,9 @@ footer .social {
   right: 0px;
   margin-left: 60px;
 }
+.page_information_right a {
+  text-decoration: underline;
+}
 .page_information_right .header {
   font-size: 1.8em;
   font-weight: 700;
@@ -342,7 +345,7 @@ footer .social {
 }
 .share_project_social {
   display: inline-block;
-  margin: 12px;
+  margin: 20px 12px;
 }
 .share_project_social .share_project_social_icon {
   width: 60px;
