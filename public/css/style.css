@@ -1,0 +1,394 @@
+/* MAIN FONTS */
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Semibold.ttf")
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-SemiboldItalic.ttf")
+  font-style: italic, oblique;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-Bold.ttf")
+  font-weight: 700;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("../fonts/OpenSans-BoldItalic.ttf")
+  font-weight: 700;
+  font-style: italic, oblique;
+}
+
+/* =========================================== */
+
+body {
+  font: 14px Open Sans, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  min-width: 960px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0px; left: 0px;
+  width: 100%;
+  z-index: 1100;
+}
+header .logo {
+  left: 24px; top: 24px;
+  background-color: black;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  width: 36px; height: 36px;
+  line-height: 36px;
+  text-align: center;
+  position: absolute;
+}
+header .menu {
+  right: 24px; top: 24px;
+  position: absolute;
+  width: 36px; height: 36px;
+  cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  background-image: url("../media/banner_background.png");
+  background-size: cover;
+  height: 300px;
+
+  /* fake parallax  */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  background-attachment:fixed;
+  background-size: cover;
+}
+.banner .banner_text {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  line-height: 300px;
+}
+
+/* PROJECT COLLECTION */
+.projects {
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* PROJECT BANNER */
+.project_banner {
+  width: 480px;
+  height:640px;
+  position: relative;
+  display: inline-block;
+  margin: 24px;
+}
+.project_banner_header {
+  height: 80px;
+  position: relative;
+}
+.project_banner_header .project_banner_header_logo {
+  height: 80px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  left: 0px; 
+}
+.project_banner_header .project_banner_actions {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  line-height: 80px;
+}
+.project_banner_header .project_banner_action {
+  /* -- circle --
+  background-color: black;
+  border-radius: 40px;
+  */
+  width: 40px; height: 40px;
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.project_banner_header .project_banner_action i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.5em;
+}
+.project_banner_content {
+  height: 560px;
+}
+.project_banner_content_text {
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+  position: absolute;;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.project_banner_content_text_main {
+  font-size: 2.4em;
+  font-weight: 700;
+}
+.project_banner_content_text_secondary {
+  font-size: 1.4em;
+}
+.project_banner_image {
+  height: 560px;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* GENECOIN BANNER BG HACK */
+#genecoin_banner {
+  background-image: url( "../media/genecoin/banner_bg.png" );
+  background-size: cover;
+}
+
+/* ABOUT */
+.about_overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.95);
+  top: 0px;
+}
+.about { 
+  position: absolute;
+  text-align: center;
+  width: 480px;
+  left: 50%;
+  margin-left: -240px;
+  height: 500px;
+  top: 50%;
+  margin-top: -250px;
+}
+.about .title {
+  font-size: 3.0em;
+  font-weight: 700;
+  line-height: 2.0em;
+}
+.about .body {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.6em;
+  text-align: left;
+}
+.about .social {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.6em;
+  text-align: center;
+}
+.about .social div {
+  margin: 0px 24px;
+  width: 100px;
+  display: inline-block;
+}
+.about hr {
+  border: 1px solid #333;
+  margin: 36px 0;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+footer .copyright {
+  position: absolute;
+  left: 24px;
+  line-height: 80px;
+}
+footer .social {
+  position: absolute;
+  right: 24px;
+  line-height: 80px;
+}
+
+/* PROJECT PAGE */
+.page {
+  width: 1024px;
+  margin: 80px auto;
+}
+.page_title {
+  font-size: 3.6em;
+  font-weight: 700;
+  text-align: left;
+}
+.page_summary {
+  font-size: 1.4em;
+}
+.page_images {
+  width: 100%;
+  margin: 60px auto;
+  height: 608px;
+  box-shadow: 5px 5px 10px #ccc;
+}
+.page_images_header {
+  height: 48px;
+  font-size: 1.4em;
+  line-height: 48px;
+  position: relative;
+}
+.page_images_header div {
+  display: inline-block;
+}
+.page_images_header .page_images_navigation {
+  position: absolute;
+}
+.page_images_header .page_images_navigation .fa {
+  font-size: 1.6em;
+  margin: 0 0 0 24px;
+  line-height: 48px;
+  cursor: pointer;
+}
+.page_images_header .page_images_link {
+  position: absolute;
+  right: 24px;
+  line-height: 48px;
+}
+.page_image {
+  display: none;
+}
+.page_image.active {
+  display: block;
+}
+.page_information {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.page_information > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.page_information_left {
+  width: 204px;
+}
+.page_information_left .page_information_logo {
+  width: 204px; height: 204px;
+}
+.page_information_left .page_information_link {
+  width: 202px;
+  border: 1px solid #fff;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.page_information_left .page_information_details .title {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.page_information_right {
+  width: 760px;
+  right: 0px;
+  margin-left: 60px;
+}
+.page_information_right .header {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.page_information_right .body {
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}
+.page_information_right .image {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* SHARE PROJECT */
+.share_project {
+  border-top: 1px solid #888;
+  width: 1024px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.share_project_label {
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 48px;
+}
+.share_project_social_container {
+  margin: 6px auto;
+  text-align: center;
+}
+.share_project_social {
+  display: inline-block;
+  margin: 12px;
+}
+.share_project_social .share_project_social_icon {
+  width: 60px;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 60px;
+}
+.share_project_social .share_project_social_label {
+  font-size: 1.0em;
+  margin-top: 12px;
+}
+.share_project_link {
+  font-size: 3.0em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* OTHER PROJECTS */
+.other_projects_container {
+  background-color: #ccc;
+  width: 100%;
+}
+.other_projects {
+  width: 1024px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.other_projects_label {
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 48px;
+  color: black;
+}
+.other_projects_array {
+  font-size: 0px;
+}
+.project_tile {
+  cursor: pointer;
+  display: inline-block;
+}
+.project_tile img {
+  width: 180px;
+  height: 180px;
+}

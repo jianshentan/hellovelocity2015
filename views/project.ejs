@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include partials/head %>
+  </head>
+  <body>
+    <% include partials/header %>
+
+    <% if( page_url == "/bitelabs" ){ %>
+      <% include partials/bitelabs_page %>
+    <% } %>
+
+    <% if( page_url == "/genecoin" ){ %>
+      <% include partials/genecoin_page %>
+    <% } %>
+
+    <% if( page_url == "/pinkhouse" ){ %>
+      <% include partials/pinkhouse_page %>
+    <% } %>
+    
+    <% if( page_url == "/mcmass" ){ %>
+      <% include partials/mcmass_page %>
+    <% } %>
+    
+    <% if( page_url == "/yinte" ){ %>
+      <% include partials/yinte_page %>
+    <% } %>
+
+    <% if( page_url == "/beastmade" ){ %>
+      <% include partials/beastmade_page %>
+    <% } %>
+
+
+    <div class="share_project">
+      <div class="share_project_label">Share this project</div>
+
+      <div class="share_project_social_container">
+        <a href="">
+          <div class="share_project_social">
+            <div class="share_project_social_icon">
+              <i class="fa fa-facebook fa"></i>
+            </div>
+            <div class="share_project_social_label">
+              facebook
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="share_project_social">
+            <div class="share_project_social_icon">
+              <i class="fa fa-facebook fa"></i>
+            </div>
+            <div class="share_project_social_label">
+              facebook
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="share_project_social">
+            <div class="share_project_social_icon">
+              <i class="fa fa-facebook fa"></i>
+            </div>
+            <div class="share_project_social_label">
+              facebook
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="share_project_social">
+            <div class="share_project_social_icon">
+              <i class="fa fa-facebook fa"></i>
+            </div>
+            <div class="share_project_social_label">
+              facebook
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="share_project_social">
+            <div class="share_project_social_icon">
+              <i class="fa fa-facebook fa"></i>
+            </div>
+            <div class="share_project_social_label">
+              facebook
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="share_project_link">
+        hellovelocity.com<%= page_url %>
+      </div>
+    </div>
+
+    <div class="other_projects_container">
+      <div class="other_projects">
+        <div class="other_projects_label">More Projects</div>
+        <div class="other_projects_array">
+          <% if( page_url != "/yinte" ) { %>
+            <% include partials/yinte_tile %>
+          <% } %>
+          <% if( page_url != "/mcmass" ) { %>
+            <% include partials/mcmass_tile %>
+          <% } %>
+          <% if( page_url != "/pinkhouse" ) { %>
+            <% include partials/pinkhouse_tile %>
+          <% } %>
+          <% if( page_url != "/bitelabs" ) { %>
+            <% include partials/bitelabs_tile %>
+          <% } %>
+          <% if( page_url != "/beastmade" ) { %>
+            <% include partials/beastmade_tile %>
+          <% } %>
+          <% if( page_url != "/genecoin" ) { %>
+            <% include partials/genecoin_tile %>
+          <% } %>
+        </div>
+      </div>
+
+      <% include partials/footer%>
+    </div>
+
+    <script src="/js/jquery-2.1.3.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
