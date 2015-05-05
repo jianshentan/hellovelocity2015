@@ -5,7 +5,9 @@
         url('../fonts/OpenSans-Semibold.woff') format('woff'),
         url('../fonts/OpenSans-Semibold.ttf') format('truetype'),
         url('../fonts/OpenSans-Semibold.svg') format('svg');
+  font-style: none;
 }
+/*
 @font-face {
   font-family: Open Sans;
   src:  url('../fonts/OpenSans-SemiboldItalic.eot') format('eot'),
@@ -14,6 +16,7 @@
         url('../fonts/OpenSans-SemiboldItalic.svg') format('svg');
   font-style: italic, oblique;
 }
+*/
 @font-face {
   font-family: Open Sans;
   src:  url('../fonts/OpenSans-Bold.eot') format('eot'),
@@ -22,6 +25,7 @@
         url('../fonts/OpenSans-Bold.svg') format('svg');
   font-weight: 700;
 }
+/*
 @font-face {
   font-family: Open Sans;
   src:  url('../fonts/OpenSans-BoldItalic.eot') format('eot'),
@@ -31,6 +35,7 @@
   font-weight: 700;
   font-style: italic, oblique;
 }
+*/
 
 /* =========================================== */
 
@@ -39,7 +44,6 @@ body {
   padding: 0px;
   margin: 0px;
   min-width: 960px;
-  font-style: none;
 }
 a {
   cursor: pointer;
