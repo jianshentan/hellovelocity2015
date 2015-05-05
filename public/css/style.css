@@ -79,7 +79,6 @@ header .menu {
   min-width: 1060px;
   background-color: rgba(0,0,0,0.8);
   background-image: url("../media/banner_background.png");
-  background-size: cover;
   height: 300px;
 
   /* fake parallax  */
@@ -89,6 +88,7 @@ header .menu {
   width:100%;
   background-attachment:fixed;
   background-size: cover;
+  background-position: center top;
 }
 .banner .banner_text {
   color: white;
@@ -101,6 +101,7 @@ header .menu {
     width: 100vw;
     min-width: inherit;
     height: 40vh;
+    background-size: auto 100vw;
   }
   .banner .banner_text {
     font-size: 18vw;
