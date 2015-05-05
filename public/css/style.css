@@ -33,6 +33,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  body {
+    max-width: inherit;
+    min-width: 0px;
+    width: 100vw;
+  }
+}
 
 /* HEADER */
 header {
@@ -58,10 +65,23 @@ header .menu {
   width: 36px; height: 36px;
   cursor: pointer;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  header .logo { 
+    left: 3vw; top: 3vw;
+    font-size: 5vw;
+    width: 10vw; height: 10vw;
+    line-height: 10vw;
+  }
+  header .menu { 
+    right: 3vw; top: 3vw;
+    width: 10vw; height: 10vw;
+  }
+}
 
 /* BANNER */
 .banner {
   width: 100%;
+  min-width: 1060px;
   background-color: rgba(0,0,0,0.8);
   background-image: url("../media/banner_background.png");
   background-size: cover;
@@ -81,17 +101,34 @@ header .menu {
   font-size: 64px;
   line-height: 300px;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .banner {
+    width: 100vw;
+    min-width: inherit;
+  }
+  .banner .banner_text {
+    font-size: 18vw;
+    line-height: inherit;
+  }
+}
 
 /* PROJECT COLLECTION */
 .projects {
   text-align: center;
   margin-top: 24px;
+  min-width: 1060px;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .projects {
+    margin-top: 0px;
+    min-width: inherit;
+  }
 }
 
 /* PROJECT BANNER */
 .project_banner {
   width: 480px;
-  height:640px;
+  height: 640px;
   position: relative;
   display: inline-block;
   margin: 24px;
@@ -156,6 +193,44 @@ header .menu {
   position: absolute;
   bottom: 0px;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .project_banner {
+    width: 90vw;
+    height: 120vw;
+    position: relative;
+    display: inline-block;
+    margin: 5vw 5vw 0px 5vw;
+  }
+  .project_banner_header,
+  .project_banner_header .project_banner_header_logo {
+    height: 15vw;
+  }
+  .project_banner_header .project_banner_actions {
+    line-height: 15vw;
+  }
+  .project_banner_header .project_banner_action {
+    width: 12vw; height: 12vw;
+    margin: 0 3vw 0 0;
+  }
+  .project_banner_header .project_banner_action i {
+    width: 12vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 5vw;
+  }
+  .project_banner_content {
+    height: 105vw;
+  }
+  .project_banner_content_text_main {
+    font-size: 7vw;
+  }
+  .project_banner_content_text_secondary {
+    font-size: 4vw;
+  }
+  .project_banner_image {
+    height: 105vw;
+  }
+}
 
 /* GENECOIN BANNER BG HACK */
 #genecoin_banner {
@@ -210,6 +285,37 @@ header .menu {
   border: 1px solid #333;
   margin: 36px 0;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .about { 
+    width: 85vw;
+    margin-left: -42.5vw;
+    margin-top: 0px;
+    height: 70vh;
+    margin-top: -35vh;
+  }
+  .about .title {
+    font-size: 7vw;
+  }
+  .about .body {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+  .about hr {
+    display: none;
+  }
+  .about .social_container {
+    position: fixed;
+    bottom: 10vw;
+  }
+  .about .social {
+    font-size: 4vw;
+    line-height: 7vw;
+  }
+  .about .social div {
+    margin: 0 6vw;
+    width: 15vw;
+  }
+}
 
 /* FOOTER */
 footer {
@@ -226,6 +332,22 @@ footer .social {
   position: absolute;
   right: 24px;
   line-height: 80px;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  footer {
+    text-align: center;
+    margin-top: 15vw;
+  }
+  footer .copyright {
+    position: relative;
+    left: inherit;
+    line-height: 10vw;
+  }
+  footer .social {
+    position: relative;
+    right: inherit;
+    line-height: 10vw;
+  }
 }
 
 /* PROJECT PAGE */
@@ -299,6 +421,7 @@ footer .social {
   line-height: 40px;
   margin: 10px 0;
   cursor: pointer;
+  background-color: white;
 }
 .page_information_left .page_information_details .title {
   font-size: 1.6em;
@@ -324,6 +447,82 @@ footer .social {
 .page_information_right .image {
   width: 100%;
   margin-bottom: 24px;
+}
+.page_information_right .video {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .page {
+    width: 90vw;
+    margin: 18vw 5vw 15vw 5vw;
+  }
+  .page_title {
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: 6vw;
+  }
+  .page_summary {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+  .page_images {
+    width: 90vw;
+    margin: 5vw auto;
+    height: 59vw;
+  }
+  .page_images_header {
+    height: 10vw;
+    font-size: 5vw;
+    line-height: 10vw;
+  }
+  .page_images_header .page_images_navigation .fa {
+    font-size: 7vw;
+    line-height: 10vw;
+  }
+  .page_images_header .page_images_link {
+    font-size: 4vw;
+    line-height: 10vw;
+  }
+  .page_image {
+    width: 90vw;
+  }
+  .page_information {
+    width: 90vw;
+  }
+  .page_information_left ,
+  .page_information_right {
+    width: 90vw;
+    margin: 5vw auto;
+  }
+  .page_information_right .header {
+    font-size: 5vw;
+    margin-bottom: 6vw;
+  }
+  .page_information_right .body {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+  .page_information_right .image {
+    width: 90vw;
+  }
+  .page_information_right .video {
+    width: 90vw;
+    height: 50vw;
+    margin-bottom: 6vw;
+  }
+  .page_information_left {
+    text-align: center;
+    width: 100vw;
+    margin: 5vw -5vw;
+    background-color: #ddd;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+  .page_information_left .page_information_link {
+    margin: 5vw auto;
+  }
 }
 
 /* SHARE PROJECT */
@@ -365,11 +564,38 @@ footer .social {
   font-weight: 700;
   text-align: center;
 }
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .share_project {
+    width: 90vw;
+    padding-top: 4vw;
+    padding-bottom: 20vw;
+    border: 0px solid #fff;
+  }
+  .share_project_label {
+    font-size: 4vw;
+    margin-bottom: 6vw;
+  }
+  .share_project_social_container {
+    margin: 3vw auto;
+  }
+  .share_project_social {
+    margin: 4vw 3vw;
+  }
+  .share_project_social .share_project_social_icon {
+    width: 18vw; height: 18vw;
+    font-size: 7vw;
+    line-height: 18vw;
+  }
+  .share_project_link {
+    font-size: 6vw;
+  }
+}
 
 /* OTHER PROJECTS */
 .other_projects_container {
   background-color: #ccc;
   width: 100%;
+  min-width: 1024px;
 }
 .other_projects {
   width: 1024px;
@@ -394,4 +620,23 @@ footer .social {
 .project_tile img {
   width: 180px;
   height: 180px;
+}
+@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .other_projects_container {
+    width: 100vw;
+    min-width: 100vw;
+  }
+  .other_projects {
+    width: 100vw;
+    padding-top: 16vw;
+    padding-bottom: 0vw;
+  }
+  .other_projects_label {
+    font-size: inherit;
+    margin-bottom: 12vw;
+  }
+  .project_tile img {
+    width: 36vw;
+    height: 36vw;
+  }
 }
