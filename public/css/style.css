@@ -106,6 +106,7 @@ header .menu {
   .banner .banner_text {
     font-size: 18vw;
     line-height: inherit;
+    margin-top: 12vw;
   }
 }
 
