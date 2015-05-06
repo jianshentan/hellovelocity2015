@@ -290,9 +290,6 @@ header .menu {
   .about { 
     width: 85vw;
     margin-left: -42.5vw;
-    margin-top: 0px;
-    height: 70vh;
-    margin-top: -35vh;
   }
   .about .title {
     font-size: 7vw;
