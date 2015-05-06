@@ -285,7 +285,7 @@ header .menu {
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   .about_overlay {
-    height: 100vh;
+    height: 110vh;
   }
   .about { 
     width: 85vw;
@@ -642,7 +642,7 @@ footer .social {
   .other_projects_label {
     font-size: inherit;
     margin-bottom: 12vw;
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .project_tile img {
     width: 36vw;
