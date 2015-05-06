@@ -284,6 +284,9 @@ header .menu {
   margin: 36px 0;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .about_overlay {
+    height: 100vh;
+  }
   .about { 
     width: 85vw;
     margin-left: -42.5vw;
@@ -335,7 +338,7 @@ footer .social {
   footer {
     text-align: center;
     margin-top: 15vw;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   footer .copyright {
     position: relative;
@@ -525,7 +528,8 @@ footer .social {
   }
   .page_information_left .page_information_link {
     width: 60vw;
-    height: 20vw;
+    height: 15vw;
+    line-height: 15vw;
     margin: 5vw auto;
   }
 }
@@ -572,13 +576,12 @@ footer .social {
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   .share_project {
     width: 90vw;
-    padding-top: 4vw;
+    padding-top: 2vw;
     padding-bottom: 20vw;
     border: 0px solid #fff;
     font-size: 4vw;
   }
   .share_project_label {
-    font-size: 3vw;
     margin-bottom: 6vw;
   }
   .share_project_social_container {
