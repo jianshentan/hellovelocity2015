@@ -100,7 +100,6 @@ header .menu {
   .banner {
     width: 100vw;
     min-width: inherit;
-    height: 40vh;
     background-size: auto 100vw;
   }
   .banner .banner_text {
