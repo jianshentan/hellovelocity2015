@@ -108,7 +108,7 @@ $( document ).ready( function() {
     $( ".page_information_left" ).insertAfter( ".page_information_right" );
 
     // override vh height {
-    $( ".about_overlay" ).height( $( window ).height() );
+    // $( ".about_overlay" ).height( $( window ).height() );
   }
 
 });

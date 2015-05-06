@@ -284,8 +284,8 @@ header .menu {
   margin: 36px 0;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
-  .about_overlay {
-    height: 110vh;
+  .about_overlay { 
+    height: 100vh;
   }
   .about { 
     width: 85vw;
@@ -299,12 +299,14 @@ header .menu {
   .about .body {
     font-size: 5vw;
     line-height: 7vw;
+    width: 80vw;
+    margin: 0 auto;
   }
   .about hr {
     display: none;
   }
   .about .social_container {
-    margin-top:4vw;
+    margin-top: 10vw;
   }
   .about .social {
     font-size: 4vw;
