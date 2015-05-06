@@ -102,5 +102,10 @@ $( document ).ready( function() {
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $( ".about_overlay" ).height( $( window ).height() );
   }
+  // prevent mobile scroll
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if( isAbout ) 
+      $( document ).delegate('.ui-content', 'touchmove', false);
+  }
 
 });
