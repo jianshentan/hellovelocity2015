@@ -18,6 +18,15 @@ $( document ).ready( function() {
       });
       isAbout = false;
     }
+
+    if( isAbout ) {
+      // resent about text container height as viewport varies in size
+      var aboutContainer = $( ".about_overlay .about" )
+      var aboutContainerHeight = aboutContainer.height();
+      console.log( aboutContainerHeight );
+      aboutContainer.css( "height", aboutContainerHeight+ "px" );
+      aboutContainer.css( "margin-top", "-"+aboutContainerHeight/2+"px" );
+    }
   });
 
   /* PROJECT BANNER */
@@ -94,20 +103,12 @@ $( document ).ready( function() {
   });
 
   /* MOBILE HACKS */
-  // reorders the left with the right so that it appears below
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    // reorders the left with the right so that it appears below
     $( ".page_information_left" ).insertAfter( ".page_information_right" );
-  }
-  // override vh height {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+    // override vh height {
     $( ".about_overlay" ).height( $( window ).height() );
-  }
-  // prevent mobile scroll
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    if( isAbout ) 
-      $(document).bind('touchmove', function(e) {
-          e.preventDefault();
-      });
   }
 
 });

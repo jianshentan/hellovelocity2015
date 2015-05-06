@@ -290,8 +290,8 @@ header .menu {
   .about { 
     width: 85vw;
     margin-left: -42.5vw;
-    height: 500px;
-    margin-top: -190px;
+    height: auto;
+    margin-top: auto;
   }
   .about .title {
     font-size: 7vw;
@@ -304,8 +304,7 @@ header .menu {
     display: none;
   }
   .about .social_container {
-    position: fixed;
-    bottom: 10vw;
+    margin-top:4vw;
   }
   .about .social {
     font-size: 4vw;
