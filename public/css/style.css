@@ -335,6 +335,7 @@ footer .social {
   footer {
     text-align: center;
     margin-top: 15vw;
+    font-size: 5vw;
   }
   footer .copyright {
     position: relative;
@@ -517,6 +518,7 @@ footer .social {
     background-color: #ddd;
     padding-top: 15vw;
     padding-bottom: 15vw;
+    font-size: 5vw;
   }
   .page_information_left .page_information_link {
     margin: 5vw auto;
@@ -568,9 +570,9 @@ footer .social {
     padding-top: 4vw;
     padding-bottom: 20vw;
     border: 0px solid #fff;
+    font-size: 4vw;
   }
   .share_project_label {
-    font-size: 4vw;
     margin-bottom: 6vw;
   }
   .share_project_social_container {
