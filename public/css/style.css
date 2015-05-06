@@ -291,7 +291,7 @@ header .menu {
     width: 85vw;
     margin-left: -42.5vw;
     height: 500px;
-    margin-top: -180px;
+    margin-top: -190px;
   }
   .about .title {
     font-size: 7vw;
@@ -638,11 +638,11 @@ footer .social {
     width: 100vw;
     padding-top: 16vw;
     padding-bottom: 0vw;
-    font-size: 3vw;
   }
   .other_projects_label {
     font-size: inherit;
     margin-bottom: 12vw;
+    font-size: 3vw;
   }
   .project_tile img {
     width: 36vw;
