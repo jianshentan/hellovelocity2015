@@ -103,6 +103,4 @@ $( document ).ready( function() {
     $( ".about_overlay" ).height( $( window ).height() );
   }
 
-}
-
 });
