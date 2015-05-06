@@ -520,7 +520,12 @@ footer .social {
     padding-bottom: 15vw;
     font-size: 5vw;
   }
+  .page_information_left .page_information_logo {
+    width: 60vw; height: 60vw;
+  }
   .page_information_left .page_information_link {
+    width: 60vw;
+    height: 20vw;
     margin: 5vw auto;
   }
 }
@@ -573,6 +578,7 @@ footer .social {
     font-size: 4vw;
   }
   .share_project_label {
+    font-size: 3vw;
     margin-bottom: 6vw;
   }
   .share_project_social_container {
@@ -630,6 +636,7 @@ footer .social {
     width: 100vw;
     padding-top: 16vw;
     padding-bottom: 0vw;
+    font-size: 3vw;
   }
   .other_projects_label {
     font-size: inherit;
