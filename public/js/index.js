@@ -93,10 +93,16 @@ $( document ).ready( function() {
     });
   });
 
-  /* MOBILE HACK FOR PAGE PROJECT */
+  /* MOBILE HACKS */
   // reorders the left with the right so that it appears below
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     $( ".page_information_left" ).insertAfter( ".page_information_right" );
   }
+  // override vh height {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $( ".about_overlay" ).height( $( window ).height() );
+  }
+
+}
 
 });
