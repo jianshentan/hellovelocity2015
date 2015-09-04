@@ -263,16 +263,23 @@ header .menu {
   }
 }
 
+.load_overlay {
+  display: block;
+  background-color: rgba(0,0,255,1);
+}
 /* NAV */
+.load_overlay,
 .nav_overlay {
-  display: none;
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
   position: fixed;
   z-index: 1000;
-  background-color: rgba(0,0,255,0.85);
   top: 0px;
+}
+.nav_overlay {
+  display: none;
+  background-color: rgba(0,0,255,0.85);
 }
 .nav { 
   font-family: Montserrat;
@@ -287,6 +294,9 @@ header .menu {
 }
 
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+  .load_overlay {
+    height: 100vh;
+  }
   .nav_overlay { 
     height: 100vh;
   }

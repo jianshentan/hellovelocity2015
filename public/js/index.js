@@ -1,17 +1,22 @@
 $( document ).ready( function() {
+
+  /* loading */
+  $( ".load_overlay" ).slideUp('slow');
+
+  
   /* ABOUT */
   var isNav = false;
   var navOverlay = $( ".nav_overlay" );
   $( "header .menu" ).click( function() {
     if( !isNav ) {
-      navOverlay.fadeIn();
+      navOverlay.slideDown();
       $( this ).fadeOut( function() {
         $( this ).attr( "src","../media/close_menu_icon_white.png" )
         $( this ).fadeIn()
       });
       isNav = true;
     } else {
-      navOverlay.fadeOut();
+      navOverlay.slideUp();
       $( this ).fadeOut( function() {
         $( this ).attr( "src","../media/menu_icon_white.png" )
         $( this ).fadeIn()
