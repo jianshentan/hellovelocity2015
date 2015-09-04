@@ -5,6 +5,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { page_url: req.url });
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('about', { page_url: req.url });
+});
+
 router.get('/bitelabs', function(req, res, next) {
   res.render('project', { page_url: req.url });
 });
