@@ -6,14 +6,14 @@ $( document ).ready( function() {
     if( !isNav ) {
       navOverlay.fadeIn();
       $( this ).fadeOut( function() {
-        $( this ).attr( "src","../media/close_menu_icon_black.png" )
+        $( this ).attr( "src","../media/close_menu_icon_white.png" )
         $( this ).fadeIn()
       });
       isNav = true;
     } else {
       navOverlay.fadeOut();
       $( this ).fadeOut( function() {
-        $( this ).attr( "src","../media/menu_icon_black.png" )
+        $( this ).attr( "src","../media/menu_icon_white.png" )
         $( this ).fadeIn()
       });
       isNav = false;

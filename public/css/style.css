@@ -37,7 +37,7 @@ body {
   font: 14px Open Sans, Helvetica, Arial, sans-serif;
   padding: 0px;
   margin: 0px;
-  min-width: 960px;
+  min-width: 800px;
 }
 a {
   cursor: pointer;
@@ -58,8 +58,8 @@ header {
   top: 0px; left: 0px;
   width: 100%;
   z-index: 1100;
-  border-bottom: 5px solid blue;
-  background-color: white;
+  border-bottom: 5px solid white;
+  background-color: blue;
 }
 header .logo {
   left: 24px; top: 24px;
@@ -77,7 +77,7 @@ header .menu {
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   header {
     height: 16vw;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid white;
   }
   header .logo { 
     left: 3vw; top: 3vw;
@@ -93,10 +93,9 @@ header .menu {
 /* BANNER */
 .banner {
   width: 100%;
-  background-color: white;
 }
 .banner .banner_text {
-  color: blue;
+  color: white;
   text-align: center;
   font-size: 48px;
   font-weight: 800;
@@ -120,7 +119,7 @@ header .menu {
 .projects {
   text-align: center;
   margin-top: 132px;
-  min-width: 1060px;
+  min-width: 800px;
   margin-bottom: 24px;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
@@ -247,7 +246,7 @@ header .menu {
 .about {
   color: blue;
   max-width: 800px;
-  margin: 140px auto 60px auto;
+  margin: 148px auto 60px auto;
   font-size: 2.0em;
 }
 .about a {
@@ -404,7 +403,7 @@ header .menu {
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   .page {
     width: 90vw;
-    margin: 92px 5vw 15vw 5vw;
+    margin: 92px 5vw -5vw 5vw;
   }
   .page_title {
     text-align: center;
@@ -482,17 +481,17 @@ header .menu {
 
 /* SHARE PROJECT */
 .share_project {
-  border-top: 5px solid blue;
   width: 1024px;
   padding-top: 80px;
-  padding-bottom: 100px;
-  margin: 0 auto;
+  padding-bottom: 80px;
+  margin: 0 auto 80px auto;
+  background-color: blue;
+  color: white;
 }
 .share_project_label {
   text-align: center;
   font-size: 1.4em;
   margin-bottom: 12px;
-  color: blue;
 }
 .share_project_social_container {
   margin: 6px auto;
@@ -505,47 +504,48 @@ header .menu {
 .share_project_social .share_project_social_icon {
   width: 60px;
   height: 60px;
-  background-color: white;;
-  color: blue;
+  background-color: blue;
   font-size: 1.8em;
   text-align: center;
   line-height: 60px;
   border-radius: 45px;
-  border: 5px solid blue;
+  border: 5px solid white;
 }
 .share_project_social .share_project_social_label {
   font-size: 1.0em;
   margin-top: 12px;
-  color: blue;
 }
 .share_project_link {
   font-size: 3.0em;
   font-weight: 700;
   text-align: center;
   font-family: Montserrat;
-  color: blue;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   .share_project {
     width: 90vw;
-    padding-top: 2vw;
-    padding-bottom: 20vw;
     border: 0px solid #fff;
     font-size: 4vw;
+    margin: inherit;
+    padding: 15vw 5vw;
   }
   .share_project_label {
-    margin-bottom: 6vw;
+    margin-bottom: 3vw;
   }
   .share_project_social_container {
     margin: 3vw auto;
   }
   .share_project_social {
-    margin: 4vw 3vw;
+    margin: 2vw;
+  }
+  .share_project_social_label {
+    font-size: 3vw !important;
   }
   .share_project_social .share_project_social_icon {
-    width: 18vw; height: 18vw;
-    font-size: 7vw;
-    line-height: 18vw;
+    width: 10vw; height: 10vw;
+    line-height: 10vw;
+    font-size: 5vw;
+    border: 3px solid white;
   }
   .share_project_link {
     font-size: 6vw;
