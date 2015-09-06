@@ -3,7 +3,23 @@ $( document ).ready( function() {
   /* loading */
   $( ".load_overlay" ).slideUp('slow');
 
-  
+  /* CURRENT */
+  function loadCurrentEventWidth() {
+    var currentEventWidth = 0;
+    $( '.current_event').each( function() {
+      if( $( this ).width() <= 1 ) {
+        return false;
+      } else {
+        currentEventWidth += $( this ).width(); 
+      }
+    });
+    $( '.current' ).width( currentEventWidth );
+  }
+
+  if( !loadCurrentEventWidth() ) {
+    setTimeout( loadCurrentEventWidth, 500 );
+  }
+
   /* ABOUT */
   var isNav = false;
   var navOverlay = $( ".nav_overlay" );
