@@ -120,7 +120,6 @@ header .menu {
   width: 100vw;
   overflow-x: scroll;
   overflow-y: hidden;
-  border-bottom: 5px solid blue;
   background-color: blue;
   height: 500px;
   margin-top: 108px;
@@ -137,6 +136,16 @@ header .menu {
 .current_wrapper img {
   height: 100%;
   width: auto;
+}
+::-webkit-scrollbar {
+  width: 0;  /* for vertical scrollbars */
+  height: 8px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: blue;
 }
 @media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
   .current_wrapper {
