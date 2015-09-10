@@ -44,7 +44,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   body {
     max-width: inherit;
     min-width: 0px;
@@ -74,7 +74,7 @@ header .menu {
   width: 60px; height: 60px;
   cursor: pointer;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   header {
     height: 16vw;
     border-bottom: 3px solid white;
@@ -102,7 +102,7 @@ header .menu {
   line-height: 108px;
   font-family: Montserrat;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .banner {
     width: 100vw;
     min-width: inherit;
@@ -111,7 +111,7 @@ header .menu {
   }
   .banner .banner_text {
     font-size: 8vw;
-    line-height: 60px;
+    line-height: 16vw;t
   }
 }
 
@@ -147,7 +147,7 @@ header .menu {
 ::-webkit-scrollbar-thumb {
   background: blue;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .current_wrapper {
     margin-top: 16vw;
     height: 70vh;
@@ -161,7 +161,7 @@ header .menu {
   min-width: 800px;
   margin-bottom: 24px;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .projects {
     margin-top: 0px;;
     min-width: inherit;
@@ -236,7 +236,7 @@ header .menu {
   position: absolute;
   bottom: 0px;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .project_banner {
     width: 90vw;
     height: 120vw;
@@ -294,7 +294,7 @@ header .menu {
 .about .bold {
   font-weight: 800;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .about {
     width: 100vwh;
     padding: 5vw;
@@ -332,7 +332,7 @@ header .menu {
   margin: 10px auto;
 }
 
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .load_overlay {
     height: 100vh;
   }
@@ -449,7 +449,7 @@ header .menu {
   height: 400px;
   margin-bottom: 24px;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .page {
     width: 90vw;
     margin: 92px 5vw -5vw 5vw;
@@ -570,7 +570,7 @@ header .menu {
   text-align: center;
   font-family: Montserrat;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .share_project {
     width: 90vw;
     border: 0px solid #fff;
@@ -651,7 +651,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 180px;
   height: 180px;
 }
-@media only screen and (min-device-width : 320px ) and (max-device-width: 480px ) {
+@media only screen and (min-device-width : 320px ) and (max-device-width: 640px ) {
   .other_projects_container {
     width: 100vw;
     min-width: 100vw;

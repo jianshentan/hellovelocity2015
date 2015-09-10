@@ -17,7 +17,7 @@ $( document ).ready( function() {
   }
 
   if( !loadCurrentEventWidth() ) {
-    setTimeout( loadCurrentEventWidth, 500 );
+    setTimeout( loadCurrentEventWidth, 1000 );
   }
 
   /* ABOUT */
