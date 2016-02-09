@@ -33,5 +33,8 @@ router.get('/beastmade', function(req, res, next) {
   res.render('project', { page_url : req.url });
 });
 
+router.get('/newsletter', function(req, res, next) {
+  res.render('newsletter', { page_url : req.url });
+});
 
 module.exports = router;
