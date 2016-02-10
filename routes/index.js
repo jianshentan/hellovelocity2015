@@ -33,6 +33,10 @@ router.get('/beastmade', function(req, res, next) {
   res.render('project', { page_url : req.url });
 });
 
+router.get('/year-one-in-review', function(req, res, next) {
+  res.render('newsletter', { page_url : req.url });
+});
+
 router.get('/newsletter', function(req, res, next) {
   res.render('newsletter', { page_url : req.url });
 });
